@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>football grid</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        #cointainer1 {
+            display: grid;
+            grid-template-rows: repeat(1, 100%);
+            grid-template-columns: repeat(2, 45%);
+            grid-gap: 5%;
+            justify-content: space-evenly;
+            
+        }
+        .images {
+            margin-top: 20px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOcuavFDtPEjMOBySj0wXzaEviImtamJsh2w&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .tenis {
+            color: white;
+            border: 1px solid blue;
+            width: fit-content;
+            background-color: blue;
+            margin: 5px;
+            padding: 3px;
+        }
+        .football {
+            color: white;
+            border: 1px solid yellow;
+            width: fit-content;
+            background-color: yellow;
+            margin: 5px;
+            padding: 3px;
+        }
+        .para {
+            color: white;
+            font-size: 25px;
+            margin-top: 120px;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .material-icons {
+            font-size: 25px;
+            padding: 10px;
+            color: white;
+        }
+
+        #container2 {
+            display: grid;
+            grid-template-rows: repeat(3,30%);
+            grid-template-columns: repeat(2, 45%);
+            justify-content: space-around;
+            grid-gap: 20px;
+            margin-top: 5%;
+        }
+        #container2 > div {
+            align-items: center;
+        }
+        #container2 > div > img{
+            height: 100%;
+            width: 20%;
+            float: left;
+            padding-right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="cointainer1">
+        <div class="images">
+            <p class="tenis">TENIS</p>
+            <p class="para">England reach  World Cup last 16 with hard-found win over Argentina</p>
+            <div class="icons">
+                <span class="material-icons">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: white; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid white; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: white; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+        <div class="images">
+            <p class="football">FOOTBALL</p>
+            <p class="para">WE are playing history and Argentina at the World Cup, says Phil Neville</p>
+            <div class="icons">
+                <span class="material-icons">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: white; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid white; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: white; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container2">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbtQMaBsCVY_2erTA7F84Tw4Y0zDp1-S0Sg&usqp=CAU" alt="">
+            <h2>There's a great history of the <br>winner Sandia</h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReahHNHEJH4wlCWOXrAKaBOFGvDNdpGdJLmg&usqp=CAU" alt="">
+            <h2>Le Havre does have a growing <br>fan club</h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGa_DOXohboGlJnvSOh9R4J3oiyclwFN6uhA&usqp=CAU" alt="">
+            <h2>It'll be a tough game and a<br>physical game</h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMicVU68V_N851p_qQxhQKfHeHhADGvz2lfQ&usqp=CAU" alt="">
+            <h2>It will be hard to break them<br>down<h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgwVEihZU2vAFMpfcAaeStxVOybUq0rHN9A&usqp=CAU" alt="">
+            <h2>If we dont score we can't get <br>frustrated</h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQHDQ69280UFMxj69ADIwn_32KTSnmp3TXw&usqp=CAU" alt="">
+            <h2>We've never seen them as<br>organised</h2>
+            <div class="icons" style="justify-content:flex-start;">
+                <span class="material-icons" style="color: rgb(231, 95, 95);">calendar_month</span>
+                <div>
+                <p style="font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">May 19</p> 
+                </div>
+                <div style="border-left: 2px solid gray; height: 8px; padding-top: 10px; margin-top: 12px;" ></div>
+                <span class="material-icons" style="color: rgb(231, 95, 95);">rate_review</span>
+                <p style = "font-size: 15px; font-weight: bold; color: gray; padding-right: 10px;">3 comment</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
